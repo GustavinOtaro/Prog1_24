@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Aula04_01.Models
+namespace _240401_01.Models
 {
     public enum AddressType
     {
-        Residential, 
+        Residential,
         Commercial,
         Other
     }
 
     public class Address
     {
-        public int Id { get; set; }
-        public AddressType Type { get; set; }
+        public int Id { get; set; }       
+        public AddressType Type { get; set; } 
         public string Street { get; set; }
         public string District { get; set; }
         public string ZipCode { get; set; }
@@ -24,7 +24,6 @@ namespace Aula04_01.Models
         public string Country { get; set; }
         public bool IsDefault { get; set; }
 
-        public Customer Customer    { get; set; }
-
+        public Customer Customer {get; set;}
     }
 }

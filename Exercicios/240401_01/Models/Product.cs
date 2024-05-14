@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Aula04_01.Models
+namespace _240401_01.Models
 {
     public class Product
     {
-        public int ProductId { get; set; }
-        public string ProductName {get; set; }
-        public string Description {get; set; }
-        public float CurrentPrice {get; set; }
+        public string ProductName { get; set; }
+        public string Description { get; set; }
+        public float CurrentPrice { get; set; }
 
         public bool Validate()
         {
@@ -24,7 +23,7 @@ namespace Aula04_01.Models
 
         public void Save(Product product)
         {
-            
-        }
+
+        }        
     }
 }

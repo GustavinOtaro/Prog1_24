@@ -1,18 +1,16 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Aula04_01.Models
+namespace _240401_01.Models
 {
     public class Order
     {
-        public int OrderId { get; set; }
-        public Customer Customer {get; set; }
-        public DateTime OrderDate {get; set; }
-        public string ShippingAddress {get; set; }
-        public List<OrderItem> OrderItems {get; set; }
+        public Customer Customer { get; set; }
+        public DateTime OrderDate { get; set; }
+        public string ShippingAddress { get; set; }
+        public List<OrderItem> OrderItems { get; set; }
 
         public bool Validate()
         {
@@ -26,7 +24,7 @@ namespace Aula04_01.Models
 
         public void Save(Order order)
         {
-            
-        }
+
+        }          
     }
 }
