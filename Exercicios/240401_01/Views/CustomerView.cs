@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using _240401_01.Models;
 using _240401_01.Controllers;
+using System.Runtime.CompilerServices;
 
 namespace _240401_01.Views
 {
@@ -31,6 +32,7 @@ namespace _240401_01.Views
                 Console.WriteLine("1 - Inserir Consumidor");
                 Console.WriteLine("2 - Pesquisar Consumidor");
                 Console.WriteLine("3 - Listar Consumidores");
+                Console.WriteLine("4 - Exportar dados delimitados");
                 Console.WriteLine("0 - Sair");
 
                 int menu = 0;
@@ -50,6 +52,11 @@ namespace _240401_01.Views
                         break;
                         case 3: 
                             ListCustomers();
+                        break;
+                        case 4:
+                        {
+                            customerController.ExportToDelimited();
+                        }
                         break;
                         default: 
                             Console.WriteLine("Opção inválida.");
@@ -121,6 +128,8 @@ namespace _240401_01.Views
             
 
         }
+
+        private void ExportDelimited(){}
 
         private void SearchCustomer()
         {    
